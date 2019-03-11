@@ -18,7 +18,8 @@ module.exports = {
          * With zero configuration,
          *   clean-webpack-plugin will remove files inside the directory below
          */
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/' // 服务器脚本中用到，配合 webpack-dev-middleware
     },
     devtool: 'inline-source-map',
     // 在 localhost:8080 下建立服务，将 dist 目录下的文件，作为可访问文件
