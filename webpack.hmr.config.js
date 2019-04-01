@@ -41,7 +41,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Output Management'
         }),
-        new webpack.NamedModulesPlugin(),
+        new webpack.NamedModulesPlugin(), // 查看要修补(patch)的依赖
         new webpack.HotModuleReplacementPlugin() // hmr
     ]
 };
